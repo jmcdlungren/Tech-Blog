@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
             plain:true
         }))
         // res.json(posts)
-        
+        res.render("homepage", {posts})
     } catch(err) {
         res.status(400).json(err)
     }
