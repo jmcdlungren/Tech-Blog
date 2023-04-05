@@ -1,15 +1,15 @@
+{{#each posts as |post| }}
 <div>
-    {{#each posts}}
-
-    <a href="/post/{{id}}">
-        <h2>{{title}}</h2>
-    </a>
-    <h3>
-        {{content}}
-    </h3>
-    <p>
-        By: {{user.username}}
-    </p>
-    
-    {{/each}}
+    <div>
+        <h2>
+            <a href="/post/{{post.id}}">{{post.title}}</a>
+        </h2>
+        <p>Posted by {{post.user.username}} on </p>
+    </div>
+    <div>
+        <p>
+            {{post.content}}
+        </p>
+    </div>
 </div>
+{{/each}}
