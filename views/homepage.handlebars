@@ -1,13 +1,15 @@
 <div>
     {{#each posts}}
-    <h2>
-        {{title}}
-    </h2>
+
+    <a href="/post/{{id}}">
+        <h2>{{title}}</h2>
+    </a>
     <h3>
         {{content}}
     </h3>
     <p>
         By: {{user.username}}
     </p>
+    
     {{/each}}
 </div>
