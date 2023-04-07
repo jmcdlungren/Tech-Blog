@@ -10,11 +10,14 @@ router.get("/", async (req, res) => {
             plain: true
         }))
         // res.json(posts)
-        res.render("homepage", { posts, loggedIn: true })
+        res.render("homepage", {
+            posts,
+            loggedIn: req.session.logged_in
+        });
     } catch (err) {
         res.status(400).json(err)
     }
-})
+});
 
 router.get('/post/:id', async (req, res) => {
     try {
