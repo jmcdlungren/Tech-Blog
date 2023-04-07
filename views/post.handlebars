@@ -9,16 +9,16 @@
             By: {{user.username}}
         </p>
 </div>
-{{!-- <div>
-    <h5>
-        Comments
-    </h5>
-    {{#each comment}}
-    <h6>
+<div>
+    <h3>
+        Comments:
+    </h3>
+    {{#each comments as |comment|}}
+    <h4>
         User: {{comment.user.username}}
-    </h6>
+    </h4>
     <p>
         Comment: {{comment.comment_body}}
     </p>
     {{/each}}
-</div> --}}
+</div>
