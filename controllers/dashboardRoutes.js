@@ -5,6 +5,9 @@ const withAuth = require('../utils/auth');
 
 // View Posts
 router.get("/", withAuth, async (req, res) => {
+    if (!req.session.logged_in) {
+        res.redirect('/login');
+    }
     try {
         const postData = await Post.findAll({
             where: {

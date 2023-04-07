@@ -1,17 +1,17 @@
 [
   {
-    "title": "Music Near Me",
-    "content": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "title": "Is iTunes Even Relevant Anymore?",
+    "content": "With streaming services like Apple Music and Spotify, we question if iTunes is still used by enough people.",
     "user_id": 1
   },
   {
-    "title": "The Ultimate Tech Quiz",
-    "content": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
+    "title": "Want to be challenged?",
+    "content": "Check out this new tech quiz that just landed. It will challenge you in JavaScript, Node.js, SQL, and more!",
     "user_id": 2
   },
   {
-    "title": "Roll 'Em Up",
-    "content": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
+    "title": "Will AI take your job?",
+    "content": "With the growing interest in ChatGPT and other AI programs, we wonder if AI will threaten to decrease the job market.",
     "user_id": 3
   }
 ]
