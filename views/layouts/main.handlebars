@@ -14,14 +14,14 @@
     <h1>Welcome to the Tech Blog</h1>
   </header>
   <nav>
-    <button><a href="/">Home</a></button>
-    <button><a href="/dashboard">Dashboard</a></button>
+    <a href="/"><button>Home</button></a>
+    <a href="/dashboard"><button>Dashboard</button></a>
     <!-- If the user is logged in, show a logout button -->
-    {{#if loggedOut}}
-    <button>Logout</button>
+    {{#if logged_in}}
+    <a href="/logout"><button id="logout">Logout</button></a>
     {{else}}
     <!-- Otherwise, show a link to login -->
-    <button><a href="/login">Login</a></button>
+    <a href="/login"><button>Login</button></a>
     {{/if}}
   </nav>
   <main>
@@ -30,7 +30,7 @@
     </div>
   </main>
   <!-- If the user is logged in, load the JS script for when they logout -->
-  {{#if loggedIn}}
+  {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
 </body>
