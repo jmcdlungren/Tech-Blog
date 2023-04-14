@@ -20,7 +20,7 @@ router.get("/", withAuth, async (req, res) => {
         }))
         console.log(posts)
         // res.json(posts)
-        res.render("dashboard", { posts })
+        res.render("dashboard", { posts, logged_in: true })
     } catch (err) {
         res.status(400).json(err)
     }

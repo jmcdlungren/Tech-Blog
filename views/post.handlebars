@@ -22,3 +22,12 @@
     </p>
     {{/each}}
 </div>
+<div class="comment-form">
+  <label for="title">Add Comment:</label>
+  <input type="hidden" name="post-id" value="{{ id }}" />
+  <textarea type="text" id="comment-body" name="comment-body"></textarea>
+    <br><br>
+  <input class="submit-btn" type="submit" value="Submit" />
+</div>
+
+<script src="/js/comment.js"></script>
