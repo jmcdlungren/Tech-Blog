@@ -1,17 +1,16 @@
 const displayUpdateHandler = async (event) => {
     event.preventDefault();
   
-    const oldPost = document.getElementById('old-post-form');
+    const oldPost = document.getElementById('update-form');
     
     oldPost.style.display = "block";
   }
 
 const updateButtonHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
-        const id = event.target.getAttribute('value');
+        const id = event.target.getAttribute('data-id');
         const title = document.querySelector('#post-title').value.trim();
         const content = document.querySelector('#post-content').value.trim();
-
         const response = await fetch(`/api/posts/${id}`, {
             method: 'PUT',
             body: JSON.stringify({ title, content }),
@@ -21,7 +20,7 @@ const updateButtonHandler = async (event) => {
         });
 
         if (response.ok) {
-            document.location.replace(`/api/posts/${id}`);
+            document.location.reload();
         } else {
             alert('Failed to update post');
         }
@@ -30,8 +29,8 @@ const updateButtonHandler = async (event) => {
 
 const delButtonHandler = async (event) => {
     console.log(event.target);
-    if (event.target.hasAttribute('value')) {
-        const id = event.target.getAttribute('value');
+    if (event.target.hasAttribute('data-id')) {
+        const id = event.target.getAttribute('data-id');
         const response = await fetch(`/api/posts/${id}`, {
             method: 'DELETE',
         });
@@ -50,7 +49,7 @@ document
 
 document
     .querySelector('.form-save')
-    .addEventListener('click', updateButtonHandler);
+    .addEventListener('submit', updateButtonHandler);
 
 document
     .querySelector('.post-delete')
