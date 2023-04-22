@@ -39,25 +39,25 @@ When the user pulls up the webpage, they will see 3 posts from the seed data. Th
 
 If the user wants to add their own posts, they will then need to go to the Login page, where they will be prompted to log in or sign up. Once the user is logged in, the user can create a new post, as well as edit or delete their own posts.
 
-Deployed webpage: [Tech Blog](https://passport-adventures.herokuapp.com/homepage)
+Deployed webpage: [Tech Blog](https://glacial-dusk-20945.herokuapp.com/)
 
 ### Homepage:
-![Homepage](./Images/)
+![Homepage](./Images/Homepage.jpg)
 
 ### Login Page:
-![Login Page](./Images/)
+![Login Page](./Images/Login.jpg)
 
 ### Post Page:
-![Standard Post](./Images/)
+![Standard Post](./Images/Post.jpg)
 
 ### Dashboard:
-![Dashboard](./Images/)
+![Dashboard](./Images/Dashboard.jpg)
 
 ### User Post Page:
-![User's Post](./Images/)
+![User's Post](./Images/your%20post.jpg)
 
-### New Post Page:
-![New Post Page](./Images/)
+### Edit Post Info:
+![Edit post info](./Images/Update.jpg)
 
 ## License
 
